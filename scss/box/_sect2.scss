@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url(../img/sect2back.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
 
     h2{
         font-weight: 700;
@@ -20,6 +24,10 @@
     list-style: none;
 
 
+}
+
+.my-btn{
+    margin-bottom: 15px;
 }
 
 .item-box
@@ -70,11 +78,27 @@
 }
 
 
-@media (max-width:420px){
+@media (max-width:520px){
+
+    .sect2{
+        h2{
+            font-size: 28px;
+        }
+    }
+    .sect2-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .item-box{
         width: 95%;
         margin: 0 auto;
         justify-content: flex-end;
+        background-position: center top 20px;
+        align-items: center;
+        h3, p{
+            text-align: center;
+        }
     }
 }
 

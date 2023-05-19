@@ -5,6 +5,7 @@
   box-sizing: border-box;
   border: 1px solid transparent;
   font-family: "Poppins", sans-serif;
+  list-style: none;
 }
 
 .logo-box {
@@ -113,6 +114,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url(../img/sect2back.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
 }
 .sect2 h2 {
   font-weight: 700;
@@ -127,6 +132,10 @@
   justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
+}
+
+.my-btn {
+  margin-bottom: 15px;
 }
 
 .item-box {
@@ -173,10 +182,111 @@
   background-position: top 25px left 25px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 520px) {
+  .sect2 h2 {
+    font-size: 28px;
+  }
+  .sect2-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .item-box {
     width: 95%;
     margin: 0 auto;
     justify-content: flex-end;
+    background-position: center top 20px;
+    align-items: center;
+  }
+  .item-box h3, .item-box p {
+    text-align: center;
+  }
+}
+.sect3 {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sect3-box-item {
+  width: 100%;
+  padding: 10px 35px;
+  background-image: url(../img/sect3boxback.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.sect3-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.sect3-content {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.sect3-content h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #22343D;
+}
+.sect3-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #22343D;
+}
+.sect3-content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #22343D;
+}
+.sect3-content p span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #22343D;
+}
+
+.sect3-img {
+  width: 50%;
+  height: 400px;
+  background-image: url(../img/sect3back1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.img-div2 {
+  background-image: url(../img/sect3back2.svg);
+}
+
+.img-div3 {
+  background-image: url(../img/sect3back3.svg);
+}
+
+.sect3-box2 {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 800px) {
+  .sect3-box {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .sect3-box div {
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .sect3-box div h3, .sect3-box div p {
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */

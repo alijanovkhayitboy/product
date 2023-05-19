@@ -1,0 +1,96 @@
+.sect3{
+    margin-top: 50px;
+    display: flex;align-items: center;
+    justify-content: center;
+}
+
+
+
+.sect3-box-item{
+    width: 100%;
+    padding: 10px 35px;
+    background-image: url(../img/sect3boxback.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    
+}
+
+
+
+
+.sect3-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+
+
+.sect3-content{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        font-size: 16px;
+        font-weight: 600;
+        color: #22343D;
+    }
+    h3{
+        font-size: 22px;
+        font-weight: 700;
+        color: #22343D;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        color: #22343D;
+    span
+    {
+        font-size: 18px;
+        font-weight: 600;
+        color: #22343D;
+    }
+    }
+}
+
+.sect3-img{
+    width: 50%;
+    height: 400px;
+    background-image: url(../img/sect3back1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.img-div2{
+    background-image: url(../img/sect3back2.svg);
+}
+.img-div3{
+    background-image: url(../img/sect3back3.svg);
+}
+
+.sect3-box2{
+    flex-direction: row-reverse;
+}
+
+@media(max-width:800px){
+    .sect3-box{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        div{
+            margin-top: 20px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            h3, p{
+                text-align: center;
+            }
+        }
+    }
+}
